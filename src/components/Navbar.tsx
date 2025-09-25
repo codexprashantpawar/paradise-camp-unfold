@@ -49,7 +49,7 @@ const Navbar = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2 hover-scale">
             <div className="w-10 h-10 bg-gradient-nature rounded-full flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-xl">S</span>
+              <span className="text-foreground font-bold text-xl">S</span>
             </div>
             <div className="hidden md:block">
               <h1 className="font-heading text-xl font-bold text-foreground">

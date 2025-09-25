@@ -23,7 +23,7 @@ const Hero = () => {
           {/* Badge */}
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 backdrop-blur-md rounded-full border border-white/20 mb-6 animate-float">
             <MapPin className="w-4 h-4" />
-            <span className="text-sm font-medium">Premium Resort near Pune</span>
+            <span className="text-sm font-medium">Camping & Resort</span>
           </div>
 
           {/* Main Heading */}

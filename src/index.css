@@ -17,18 +17,18 @@
     --popover: 0 0% 100%;
     --popover-foreground: 28 25% 15%;
 
-    /* Forest Green Primary */
-    --primary: 150 60% 25%;
-    --primary-foreground: 0 0% 98%;
-    --primary-glow: 150 50% 35%;
+    /* Soft Sky Blue Primary */
+    --primary: 200 85% 75%;
+    --primary-foreground: 0 0% 15%;
+    --primary-glow: 200 75% 85%;
 
-    /* Warm Earth Secondary */
-    --secondary: 25 35% 92%;
+    /* Warm Cream Secondary */
+    --secondary: 35 45% 92%;
     --secondary-foreground: 28 25% 15%;
 
-    /* Muted Sage */
-    --muted: 120 20% 94%;
-    --muted-foreground: 120 10% 45%;
+    /* Light Sage Muted */
+    --muted: 45 25% 94%;
+    --muted-foreground: 45 15% 45%;
 
     /* Sunset Accent */
     --accent: 25 80% 65%;
@@ -38,32 +38,32 @@
     --destructive: 0 70% 50%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 120 15% 88%;
-    --input: 120 15% 88%;
-    --ring: 150 60% 25%;
+    --border: 45 20% 88%;
+    --input: 45 20% 88%;
+    --ring: 200 85% 75%;
 
     --radius: 0.75rem;
 
     /* Custom Design Tokens */
-    --nature-green: 150 60% 25%;
-    --forest-deep: 140 70% 15%;
+    --nature-blue: 200 85% 75%;
+    --soft-blue: 200 75% 85%;
     --sunset-orange: 25 80% 65%;
     --sunset-warm: 35 70% 70%;
     --sky-blue: 200 70% 60%;
     --earth-brown: 25 40% 45%;
-    --sage-light: 120 20% 94%;
+    --sage-light: 45 25% 94%;
     --cream: 45 50% 96%;
 
     /* Gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(150 60% 25% / 0.9), hsl(25 80% 65% / 0.8));
+    --gradient-hero: linear-gradient(135deg, hsl(200 85% 75% / 0.9), hsl(25 80% 65% / 0.8));
     --gradient-sunset: linear-gradient(90deg, hsl(25 80% 65%), hsl(35 70% 70%));
-    --gradient-nature: linear-gradient(45deg, hsl(150 60% 25%), hsl(120 50% 35%));
+    --gradient-nature: linear-gradient(45deg, hsl(200 85% 75%), hsl(200 75% 85%));
     --gradient-overlay: linear-gradient(180deg, hsl(0 0% 0% / 0.4), hsl(0 0% 0% / 0.1));
 
     /* Shadows */
     --shadow-soft: 0 4px 20px hsl(0 0% 0% / 0.08);
-    --shadow-elegant: 0 10px 40px hsl(150 60% 25% / 0.15);
-    --shadow-glow: 0 0 30px hsl(150 50% 35% / 0.3);
+    --shadow-elegant: 0 10px 40px hsl(200 85% 75% / 0.15);
+    --shadow-glow: 0 0 30px hsl(200 75% 85% / 0.3);
 
     /* Typography */
     --font-heading: 'Playfair Display', serif;
@@ -98,9 +98,9 @@
     --card: 140 25% 12%;
     --card-foreground: 45 50% 95%;
 
-    --primary: 150 50% 35%;
-    --primary-foreground: 0 0% 98%;
-    --primary-glow: 150 40% 45%;
+    --primary: 200 75% 65%;
+    --primary-foreground: 0 0% 15%;
+    --primary-glow: 200 65% 75%;
 
     --secondary: 25 25% 18%;
     --secondary-foreground: 45 50% 95%;
@@ -113,7 +113,7 @@
 
     --border: 120 15% 20%;
     --input: 120 15% 20%;
-    --ring: 150 50% 35%;
+    --ring: 200 75% 65%;
   }
 }
 
@@ -159,29 +159,7 @@
     font-family: var(--font-body);
   }
 
-  /* Custom cursor */
-  .cursor-custom {
-    cursor: none;
-  }
-
-  .custom-cursor {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 20px;
-    height: 20px;
-    background: hsl(var(--primary));
-    border-radius: 50%;
-    pointer-events: none;
-    z-index: 9999;
-    mix-blend-mode: difference;
-    transition: var(--transition-smooth);
-  }
-
-  .custom-cursor.hover {
-    transform: scale(2);
-    background: hsl(var(--accent));
-  }
+  /* Remove custom cursor - using default */
 
   /* Gradient backgrounds */
   .bg-gradient-hero {

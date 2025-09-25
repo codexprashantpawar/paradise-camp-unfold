@@ -1,6 +1,6 @@
 import { ReactNode } from 'react';
 import Navbar from './Navbar';
-import CustomCursor from './CustomCursor';
+import Footer from './Footer';
 
 interface LayoutProps {
   children: ReactNode;
@@ -8,12 +8,12 @@ interface LayoutProps {
 
 const Layout = ({ children }: LayoutProps) => {
   return (
-    <div className="min-h-screen cursor-custom">
-      <CustomCursor />
+    <div className="min-h-screen">
       <Navbar />
       <main>
         {children}
       </main>
+      <Footer />
     </div>
   );
 };
