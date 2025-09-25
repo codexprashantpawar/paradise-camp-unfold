@@ -13,6 +13,10 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        heading: ['var(--font-heading)'],
+        body: ['var(--font-body)'],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -22,7 +26,16 @@ export default {
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
+          glow: "hsl(var(--primary-glow))",
         },
+        'nature-green': "hsl(var(--nature-green))",
+        'forest-deep': "hsl(var(--forest-deep))",
+        'sunset-orange': "hsl(var(--sunset-orange))",
+        'sunset-warm': "hsl(var(--sunset-warm))",
+        'sky-blue': "hsl(var(--sky-blue))",
+        'earth-brown': "hsl(var(--earth-brown))",
+        'sage-light': "hsl(var(--sage-light))",
+        'cream': "hsl(var(--cream))",
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
           foreground: "hsl(var(--secondary-foreground))",
@@ -57,6 +70,17 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+      },
+      backgroundImage: {
+        'gradient-hero': 'var(--gradient-hero)',
+        'gradient-sunset': 'var(--gradient-sunset)',
+        'gradient-nature': 'var(--gradient-nature)',
+        'gradient-overlay': 'var(--gradient-overlay)',
+      },
+      boxShadow: {
+        'soft': 'var(--shadow-soft)',
+        'elegant': 'var(--shadow-elegant)',
+        'glow': 'var(--shadow-glow)',
       },
       borderRadius: {
         lg: "var(--radius)",
