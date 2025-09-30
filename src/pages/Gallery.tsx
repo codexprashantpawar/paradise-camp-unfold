@@ -63,13 +63,13 @@ const Gallery = () => {
   return (
     <div className="pt-20">
       {/* Hero Section */}
-      <section className="py-20 bg-gradient-nature text-white">
+      <section className="py-20 bg-gradient-hero text-foreground">
         <div className="container mx-auto px-4">
           <AnimatedSection animation="fade-in" className="text-center">
             <h1 className="font-heading text-4xl md:text-6xl font-bold mb-6">
-              Photo <span className="text-sunset-orange">Gallery</span>
+              Photo <span className="text-accent">Gallery</span>
             </h1>
-            <p className="text-xl max-w-3xl mx-auto leading-relaxed">
+            <p className="text-xl max-w-3xl mx-auto leading-relaxed text-foreground/90">
               Explore our beautiful resort through these captivating images showcasing 
               our accommodations, activities, and the natural beauty that surrounds us.
             </p>
@@ -78,7 +78,7 @@ const Gallery = () => {
       </section>
 
       {/* Filter Buttons */}
-      <section className="py-12 bg-sage-light">
+      <section className="py-12 bg-muted/30">
         <div className="container mx-auto px-4">
           <AnimatedSection animation="fade-in">
             <div className="flex flex-wrap justify-center gap-4">
@@ -87,7 +87,7 @@ const Gallery = () => {
                   key={category.id}
                   variant={filter === category.id ? "default" : "outline"}
                   onClick={() => setFilter(category.id)}
-                  className={filter === category.id ? "bg-gradient-nature" : ""}
+                  className={filter === category.id ? "bg-primary text-primary-foreground" : "border-border text-foreground hover:bg-muted"}
                 >
                   {category.name}
                 </Button>
@@ -118,9 +118,9 @@ const Gallery = () => {
                     className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
                   />
                   <div className="absolute inset-0 bg-gradient-overlay opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
-                    <div className="p-6 text-white">
+                    <div className="p-6 text-background">
                       <h3 className="font-semibold text-lg">{image.title}</h3>
-                      <p className="text-sm text-white/80 capitalize">{image.category}</p>
+                      <p className="text-sm text-background/80 capitalize">{image.category}</p>
                     </div>
                   </div>
                 </div>
@@ -146,7 +146,7 @@ const Gallery = () => {
             
             <button
               onClick={closeLightbox}
-              className="absolute top-4 right-4 w-10 h-10 bg-black/50 hover:bg-black/70 text-white rounded-full flex items-center justify-center transition-colors"
+              className="absolute top-4 right-4 w-10 h-10 bg-foreground/50 hover:bg-foreground/70 text-background rounded-full flex items-center justify-center transition-colors"
             >
               <X className="w-6 h-6" />
             </button>
@@ -155,7 +155,7 @@ const Gallery = () => {
       )}
 
       {/* CTA Section */}
-      <section className="py-20 bg-sage-light">
+      <section className="py-20 bg-muted/30">
         <div className="container mx-auto px-4">
           <AnimatedSection animation="fade-in" className="text-center">
             <h2 className="font-heading text-3xl font-bold text-foreground mb-6">
@@ -165,10 +165,10 @@ const Gallery = () => {
               Book your stay with us and experience these amazing moments firsthand.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button asChild size="lg" className="bg-gradient-sunset hover-glow">
+              <Button asChild size="lg" className="bg-accent text-accent-foreground hover:shadow-elegant">
                 <Link to="/packages">View Packages</Link>
               </Button>
-              <Button asChild variant="outline" size="lg">
+              <Button asChild variant="outline" size="lg" className="border-border text-foreground hover:bg-muted">
                 <Link to="/contact">Contact Us</Link>
               </Button>
             </div>
