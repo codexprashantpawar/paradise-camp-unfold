@@ -74,7 +74,7 @@ const Contact = () => {
     {
       icon: MapPin,
       title: "Location",
-      details: ["Near Lonavala, Pune", "Maharashtra, India"],
+      details: ["At Temghar, Tal, Mulshi, Lavasa", "Pune, Maharashtra 412115"],
       action: "Get directions"
     },
     {
@@ -295,22 +295,23 @@ const Contact = () => {
               Find <span className="text-primary">Us</span>
             </h2>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-              Located in the scenic hills near Pune, our resort is easily accessible 
+              Located in the scenic hills of Temghar, Mulshi near Lavasa, our resort is easily accessible 
               and offers breathtaking views of nature.
             </p>
           </AnimatedSection>
 
           <AnimatedSection animation="slide-up">
-            <div className="bg-card rounded-3xl p-2 shadow-soft">
-              <div className="bg-muted rounded-2xl h-96 flex items-center justify-center">
-                <div className="text-center">
-                  <MapPin className="w-16 h-16 text-primary mx-auto mb-4" />
-                  <h3 className="font-semibold text-foreground mb-2">Interactive Map</h3>
-                  <p className="text-muted-foreground">
-                    Detailed location map with directions will be displayed here
-                  </p>
-                </div>
-              </div>
+            <div className="bg-card rounded-3xl p-2 shadow-soft overflow-hidden">
+              <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3785.1051353203866!2d73.52999117398116!3d18.433534982643216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc29f8ef400d20f%3A0x183ef503aef95adf!2sSubhadra&#39;s%20Paradise!5e0!3m2!1sen!2sin!4v1759227545290!5m2!1sen!2sin"
+                width="100%" 
+                height="450" 
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy" 
+                referrerPolicy="no-referrer-when-downgrade"
+                className="rounded-2xl"
+              />
             </div>
           </AnimatedSection>
         </div>
